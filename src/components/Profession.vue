@@ -68,13 +68,17 @@ export default {
 </script>
 
 <style scoped>
+
 .profession {
     background-color: #ffffff;
-    padding: 12px;
+    padding: 3px 10px; 
+    min-width: 12rem;
+    height: 100%; 
     border-radius: 12px;
     color: #000;
     transition: background-color 0.3s ease;
     display: inline-block;
+    
 }
 
 .profession.active {
@@ -109,7 +113,7 @@ export default {
 }
 
 .circle-button {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     border: none;
     border-radius: 50%;
     width: 20px;
@@ -132,9 +136,9 @@ export default {
 }
 
 .availability {
-    margin-top: 8px;
     display: flex;
-    gap: 12px;
+    gap: 20px;
+    margin-bottom: 5px;
 }
 
 input[type="radio"] {

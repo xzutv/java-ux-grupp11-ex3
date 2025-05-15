@@ -26,41 +26,46 @@ import MainView from './components/MainView.vue'
     <label>Planera arbete
       <img src="/src/assets/icons/Pil-ned.svg">
     </label>
-    
+
     <div class="profession-container">
       <Profession img_src="/src/assets/icons/hammer.svg" alt="Hammare ikon" label="Snickare" />
       <Profession img_src="/src/assets/icons/roller.svg" alt="Pensel ikon" label="Målare" />
-      <Profession img_src="/src/assets/icons/electricity.svg" alt="Lamp ikon" label="Elektriker"/>
-      <Profession img_src="/src/assets/icons/pipe.svg" alt="Rör ikon" label="Rörmokare"/>
-      <Profession img_src="/src/assets/icons/bricks.svg" alt="Mur ikon" label="Murare"/>
+      <Profession img_src="/src/assets/icons/electricity.svg" alt="Lamp ikon" label="Elektriker" />
+      <Profession img_src="/src/assets/icons/pipe.svg" alt="Rör ikon" label="Rörmokare" />
+      <Profession img_src="/src/assets/icons/bricks.svg" alt="Mur ikon" label="Murare" />
+
     </div>
+
+    <!-- <div class="book-button"> -->
+    <button class="book-button">Boka</button>
   </div>
+  <!-- </div> -->
 
   <div class="status-legend">
-      <div class="legend-item">
-        <StatusBox status="available"/>
-        Tillgänglig
-      </div>
-      <div class="legend-item">
-        <StatusBox status="full-booked"/>
-        Fullbokad
-      </div>
-      <div class="legend-item">
-        <StatusBox status="half-booked"/>
-        Bokad 50%
-      </div>
-      <div class="legend-item">
-        <StatusBox status="prel-full"/>
-        Preliminärt fullbokad
-      </div>
-      <div class="legend-item">
-        <StatusBox status="prel-half"/>
-        Preliminärt bokad 50%
-      </div>
-      <div class="legend-item">
-        <StatusBox status="absent"/>
-        Frånvaro
-      </div>
+    <div class="legend-item">
+      <StatusBox status="available" />
+      Tillgänglig
+    </div>
+    <div class="legend-item">
+      <StatusBox status="full-booked" />
+      Fullbokad
+    </div>
+    <div class="legend-item">
+      <StatusBox status="half-booked" />
+      Bokad 50%
+    </div>
+    <div class="legend-item">
+      <StatusBox status="prel-full" />
+      Preliminärt fullbokad
+    </div>
+    <div class="legend-item">
+      <StatusBox status="prel-half" />
+      Preliminärt bokad 50%
+    </div>
+    <div class="legend-item">
+      <StatusBox status="absent" />
+      Frånvaro
+    </div>
   </div>
 
   <div>
@@ -143,15 +148,35 @@ nav {
 }
 
 
-.work-plan-container{
+.work-plan-container {
   background-color: #EDEDED;
+  padding: 20px 20px;
   gap: 40px;
+  border-radius: 10px;
+  gap: 13px;
+
 }
 
 .profession-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 10px;
+}
+
+.book-button {
+  display: flex;
+  justify-self: flex-end;
+  border: none;
+  width: 200px;
+  padding: 10px;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #FFF;
+  cursor: pointer;
 }
 
 </style>

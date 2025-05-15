@@ -1,7 +1,7 @@
 <script>
-      import StatusBox from './StatusBox.vue';
-      export default {
-            components: {
+import StatusBox from './StatusBox.vue';
+export default {
+      components: {
             StatusBox
       }
 }
@@ -12,7 +12,7 @@
             <div class="calendar-header">
                   <button>left</button>
                   <div class="dates">
-                         <div class="date-cell" v-for="n in 20" :key="'date-' + n">{{ n }}</div>
+                        <div class="date-cell" v-for="n in 20" :key="'date-' + n">{{ n }}</div>
                   </div>
                   <button>right</button>
             </div>
@@ -46,74 +46,76 @@
                   <button id="invisible">hej</button>
 
             </div>
-            
-           
+
+
       </div>
 </template>
 
 <style scoped>
-      button {
-            width: 5rem;
-            border: 0;
-      }
-s
-     
+button {
+      width: 5rem;
+      border: 0;
+}
 
-      .calendar {
-            display: grid;
-            grid-template-columns: 2fr repeat(20, 1fr) .5fr;
-      }
+s .calendar {
+      display: grid;
+      grid-template-columns: 2fr repeat(20, 1fr) .5fr;
+}
 
-      .nav {
-            grid-column: span 22;
-      }
+.nav {
+      grid-column: span 22;
+}
 
-      .dates {
-            grid-column: auto;
-      }
-      .calendar-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 0.5rem;
-      }
+.dates {
+      grid-column: auto;
+}
 
-      .dates {
-            display: grid;
-            grid-template-columns: repeat(20, 1fr);
-            gap: 0.25rem;
-            flex: 1;
-      }
+.calendar-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+}
 
-      .date-cell {
-            display: flex;
-            align-items: center;    /* Vertical centering */
-            justify-content: center; /* Horizontal centering */
-            height: 2rem;
-            width: 2rem;
-            justify-self: center;         /* Or whatever height you want */
-            font-weight: bold;
-            padding: auto;
-            background-color: gray;
-            border-radius: 50%;
-      }
+.dates {
+      display: grid;
+      grid-template-columns: repeat(20, 1fr);
+      gap: 0.25rem;
+      flex: 1;
+}
 
-      .employee-row {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-      }
+.date-cell {
+      display: flex;
+      align-items: center;
+      /* Vertical centering */
+      justify-content: center;
+      /* Horizontal centering */
+      height: 2rem;
+      width: 2rem;
+      justify-self: center;
+      /* Or whatever height you want */
+      font-weight: bold;
+      padding: auto;
+      background-color: gray;
+      border-radius: 50%;
+}
 
-      .employee-name {
-            width: 5rem;
-            font-weight: bold;
-      }
+.employee-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+}
 
-      .statuses {
-            display: grid;
-            grid-template-columns: repeat(20, 1fr);
-            gap: 0.25rem;
-            flex: 1;
-            justify-items: center;
-      }
+.employee-name {
+      width: 5rem;
+      font-weight: bold;
+}
+
+.statuses {
+      display: grid;
+      grid-template-columns: repeat(20, 1fr);
+      gap: 0.25rem;
+      flex: 1;
+      justify-items: center;
+}
 </style>
