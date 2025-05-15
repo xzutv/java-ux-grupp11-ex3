@@ -11,17 +11,12 @@ import SelectBox from './components/SelectBox.vue';
         <label>Filter
           <img src="/src/assets/icons/Vector.svg">
         </label>
-
-
         <div class="box-container">
           <SelectBox label="Personer" :options="people" v-model="selectedPerson" />
           <SelectBox label="Yrkesroll" :options="roles" v-model="selectedRole" />
           <SelectBox label="Bokningstyp" :options="bookingTypes" v-model="selectedBookingType" />
-          
         </div>
-
       </div>
-
     </nav>
   </header>
 
@@ -31,6 +26,7 @@ import SelectBox from './components/SelectBox.vue';
     </label>
 
     <div class="profession-container">
+      <Profession img_src="/src/assets/icons/arcticons_hammer.svg" alt="Blabla" label="Snickare"/>
 
     </div>
   </div>
@@ -38,7 +34,7 @@ import SelectBox from './components/SelectBox.vue';
 </template>
 
 <script>
-// import Profession from './components/Profession.vue'
+import Profession from './components/Profession.vue'
 import SelectBox from './components/SelectBox.vue'
 export default {
   name: 'App',

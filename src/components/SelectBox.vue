@@ -39,5 +39,6 @@ select {
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
+    border: 0;
 }
 </style>
