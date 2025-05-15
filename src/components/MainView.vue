@@ -1,8 +1,10 @@
 <script>
 import StatusBox from './StatusBox.vue';
+import ProfileCard from './ProfileCard.vue';
+
 export default {
       components: {
-            StatusBox
+            StatusBox, ProfileCard
       }
 }
 </script>
@@ -18,9 +20,10 @@ export default {
             </div>
 
             <div class="employee-row">
-                  <div class="employee-name">
+                  <!-- <div class="employee-name">
                         Jane Doe
-                  </div>
+                  </div> -->
+                  <ProfileCard name="Jane Doe" src="/src/assets/icons/Ellipse 5.svg" alt="Person"></ProfileCard>
                   <div class="statuses">
                         <StatusBox status="available" />
                         <StatusBox status="available" />

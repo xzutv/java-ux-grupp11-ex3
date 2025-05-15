@@ -1,8 +1,9 @@
 <script setup>
+import Profession from './components/Profession.vue'
 import SelectBox from './components/SelectBox.vue';
 import StatusBox from './components/StatusBox.vue';
-import MainView from './components/MainView.vue'
-
+import MainView from './components/MainView.vue';
+import ProfileCard from './components/ProfileCard.vue';
 </script>
 
 <template>
@@ -79,12 +80,11 @@ import MainView from './components/MainView.vue'
 
 
 <script>
-import Profession from './components/Profession.vue'
-import SelectBox from './components/SelectBox.vue'
+
 export default {
   name: 'App',
   components: {
-    SelectBox
+    SelectBox, StatusBox, SelectBox, Profession, ProfileCard
   },
   data() {
     return {
@@ -138,7 +138,7 @@ nav {
 .status-legend {
   display: flex;
   gap: 2rem;
-
+  justify-self: center;
 }
 
 .legend-item {
