@@ -37,10 +37,11 @@ import ProfileCard from './components/ProfileCard.vue';
 
     </div>
 
-    <!-- <div class="book-button"> -->
+    <div class="book-button">
     <button class="book-button">Boka</button>
+    </div>
   </div>
-  <!-- </div> -->
+
 
   <div class="status-legend">
     <div class="legend-item">
@@ -68,7 +69,8 @@ import ProfileCard from './components/ProfileCard.vue';
       Frånvaro
     </div>
   </div>
-
+  <br>
+  <br>
   <div>
     <MainView></MainView>
   </div>
@@ -136,6 +138,7 @@ nav {
 }
 
 .status-legend {
+  justify-content: center;
   display: flex;
   gap: 2rem;
   justify-self: center;
