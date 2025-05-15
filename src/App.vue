@@ -1,6 +1,7 @@
 <script setup>
 import SelectBox from './components/SelectBox.vue';
 import StatusBox from './components/StatusBox.vue';
+import MainView from './components/MainView.vue'
 
 </script>
 
@@ -60,7 +61,16 @@ import StatusBox from './components/StatusBox.vue';
         Frånvaro
       </div>
   </div>
+
+  <div>
+    <MainView></MainView>
+  </div>
 </template>
+
+
+
+
+
 
 <script>
 // import Profession from './components/Profession.vue'
