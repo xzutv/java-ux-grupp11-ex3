@@ -1,32 +1,32 @@
 <template>
 
-        <div :class="['profession', { active: count > 0 }]">
+    <div :class="['profession', { active: count > 0 }]">
 
-            <div class="units">
-                <img :src="img_src" :alt="alt" class="icon">
-                <label>{{ label }}</label>
+        <div class="units">
+            <img :src="img_src" :alt="alt" class="icon" :class="{ 'icon-dark': count > 0, 'icon-light': count === 0 }">
+            <label>{{ label }}</label>
 
-                <div class="count-units">
+            <div class="count-units">
 
-                    <button class="circle-button" :class="{ disabled: count === 0 }" @click="decrease"
-                        :disabled="count === 0">
-                        <img src="/src/assets/icons/Minus.svg" alt="minus" class="plus-minus-icon">
-                    </button>
+                <button class="circle-button" :class="{ disabled: count === 0 }" @click="decrease"
+                    :disabled="count === 0">
+                    <img src="/src/assets/icons/Minus.svg" alt="minus" class="plus-minus-icon">
+                </button>
 
-                    <p>{{ count }}</p>
+                <p>{{ count }}</p>
 
-                    <button class="circle-button" @click="increase">
-                        <img src="/src/assets/icons/Plus.svg" alt="plus" class="plus-minus-icon">
-                    </button>
+                <button class="circle-button" @click="increase">
+                    <img src="/src/assets/icons/Plus.svg" alt="plus" class="plus-minus-icon">
+                </button>
 
-                </div>
-            </div>
-
-            <div class="availability">
-                <label><input type="radio" name="availability" value="50">50%</label>
-                <label><input type="radio" name="availability" value="100">100%</label>
             </div>
         </div>
+
+        <div class="availability">
+            <label><input type="radio" name="availability" value="50">50%</label>
+            <label><input type="radio" name="availability" value="100">100%</label>
+        </div>
+    </div>
 
 
 </template>
@@ -68,7 +68,6 @@ export default {
 </script>
 
 <style scoped>
-
 .profession {
     background-color: #ffffff;
     padding: 12px;
@@ -96,6 +95,14 @@ export default {
 .icon {
     width: 20px;
     height: 20px;
+}
+
+.icon-light {
+    filter: brightness(0) saturate(100%) invert(0%);
+}
+
+.icon-dark {
+    filter: brightness(0) saturate(100%) invert(100%);
 }
 
 .count-units {
