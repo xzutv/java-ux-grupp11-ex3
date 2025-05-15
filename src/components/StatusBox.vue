@@ -19,14 +19,14 @@
 
 <style scoped>
       .status-box {
-            min-width: 1rem;
-            min-width: 1rem;
-            margin: 0 .5;
+            height: auto;
+            width: auto;
+            
       }
 
       .status-box div {
             height: .3rem;
-            width: 2rem;
+            width: 3rem;
       }
 
       .odd-available, .even-available {
@@ -71,5 +71,6 @@
             <div :class="evenClass"></div>
             <div :class="oddClass"></div>
             <div :class="evenClass"></div>
+            <div :class="oddClass"></div>
       </div>
 </template>
