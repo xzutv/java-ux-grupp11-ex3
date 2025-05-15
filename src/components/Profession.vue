@@ -75,9 +75,6 @@ export default {
     color: #000;
     transition: background-color 0.3s ease;
     display: inline-block;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
 }
 
 .profession.active {
@@ -89,7 +86,6 @@ export default {
     display: flex;
     align-items: center;
     gap: 15px;
-    /* justify-content: space-between; */
 }
 
 .icon {

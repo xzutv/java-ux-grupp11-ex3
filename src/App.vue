@@ -133,11 +133,15 @@ nav {
 }
 
 
-
 .work-plan-container{
   background-color: #EDEDED;
   gap: 40px;
 }
 
+.profession-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 </style>
