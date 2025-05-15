@@ -1,5 +1,6 @@
 <script setup>
 import SelectBox from './components/SelectBox.vue';
+import StatusBox from './components/StatusBox.vue';
 
 </script>
 
@@ -29,12 +30,36 @@ import SelectBox from './components/SelectBox.vue';
     <label>Planera arbete
       <img src="/src/assets/icons/Vector.svg">
     </label>
-
+    
     <div class="profession-container">
-
     </div>
   </div>
-
+  <div class="status-legend">
+      <div class="legend-item">
+        <StatusBox status="available"/>
+        Tillgänglig
+      </div>
+      <div class="legend-item">
+        <StatusBox status="full-booked"/>
+        Fullbokad
+      </div>
+      <div class="legend-item">
+        <StatusBox status="half-booked"/>
+        Bokad 50%
+      </div>
+      <div class="legend-item">
+        <StatusBox status="prel-full"/>
+        Preliminärt fullbokad
+      </div>
+      <div class="legend-item">
+        <StatusBox status="prel-half"/>
+        Preliminärt bokad 50%
+      </div>
+      <div class="legend-item">
+        <StatusBox status="absent"/>
+        Frånvaro
+      </div>
+  </div>
 </template>
 
 <script>
@@ -93,4 +118,18 @@ nav {
   gap: 2.5rem;
   max-width: 3rem;
 }
+
+.status-legend {
+  display: flex;
+  gap: 2rem;
+
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+
 </style>
