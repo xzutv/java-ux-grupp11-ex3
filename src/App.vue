@@ -35,7 +35,7 @@ import MainView from './components/MainView.vue'
       <Profession img_src="/src/assets/icons/bricks.svg" alt="Mur ikon" label="Murare"/>
     </div>
   </div>
-
+  <br><br>
   <div class="status-legend">
       <div class="legend-item">
         <StatusBox status="available"/>
@@ -62,7 +62,8 @@ import MainView from './components/MainView.vue'
         Frånvaro
       </div>
   </div>
-
+  <br>
+  <br>
   <div>
     <MainView></MainView>
   </div>
@@ -131,6 +132,7 @@ nav {
 }
 
 .status-legend {
+  justify-content: center;
   display: flex;
   gap: 2rem;
 
@@ -153,5 +155,6 @@ nav {
   flex-direction: row;
   justify-content: space-between;
 }
+
 
 </style>
