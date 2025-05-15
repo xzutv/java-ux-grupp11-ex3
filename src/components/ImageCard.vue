@@ -1,6 +1,6 @@
-<!-- <template>
+<template>
     <div class="image-card">
-        <img :src="src" :alt="alt" />
+        <img :src="src" :alt="alt || 'Bild'" />
 
     </div>
 </template>
@@ -9,7 +9,7 @@
 
 
 export default {
-    name: 'ImageCard',
+    name: 'custom-img',
     props: {
         src: {
             type: String,
@@ -17,7 +17,7 @@ export default {
         },
         alt: {
             type: String,
-            default: ''
+            default: 'Bild'
         }
     },
 }
@@ -28,4 +28,4 @@ img {
     max-width: 100%;
     border-radius: 8px;
 }
-</style> -->
+</style>
