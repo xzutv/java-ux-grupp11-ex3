@@ -9,7 +9,7 @@ import SelectBox from './components/SelectBox.vue';
     <nav>
       <div class="filter-container">
         <label>Filter
-          <img src="/src/assets/icons/Vector.svg">
+          <img src="/src/assets/icons/Pil-ned.svg">
         </label>
         <div class="box-container">
           <SelectBox label="Personer" :options="people" v-model="selectedPerson" />
@@ -22,12 +22,15 @@ import SelectBox from './components/SelectBox.vue';
 
   <div class="work-plan-container">
     <label>Planera arbete
-      <img src="/src/assets/icons/Vector.svg">
+      <img src="/src/assets/icons/Pil-ned.svg">
     </label>
 
     <div class="profession-container">
-      <Profession img_src="/src/assets/icons/arcticons_hammer.svg" alt="Blabla" label="Snickare"/>
-
+      <Profession img_src="/src/assets/icons/arcticons_hammer.svg" alt="Hammare ikon" label="Snickare" />
+      <Profession img_src="/src/assets/icons/Roller-ikon.svg" alt="Pensel ikon" label="Målare" />
+      <Profession img_src="/src/assets/icons/healthicons_electricity-outline.svg" alt="Lamp ikon" label="Elektriker"/>
+      <Profession img_src="/src/assets/icons/ph_pipe-light.svg" alt="Rör ikon" label="Rörmokare"/>
+      <Profession img_src="/src/assets/icons/bi_bricks.svg" alt="Mur ikon" label="Murare"/>
     </div>
   </div>
 
@@ -75,7 +78,7 @@ header {
 }
 
 nav {
-  display:flex;
+  display: flex;
   padding: 1.25rem;
   background-color: #EDEDED;
   margin-bottom: 10px;
@@ -89,4 +92,11 @@ nav {
   gap: 2.5rem;
   max-width: 3rem;
 }
+
+.work-plan-container{
+  background-color: #EDEDED;
+  gap: 40px;
+}
+
+
 </style>
