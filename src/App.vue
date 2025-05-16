@@ -38,7 +38,7 @@ import ProfileCard from './components/ProfileCard.vue';
     </div>
 
     <div class="book-button">
-    <button class="book-button">Boka</button>
+      <button class="book-button">Boka</button>
     </div>
   </div>
 
@@ -172,7 +172,8 @@ nav {
   justify-self: flex-end;
   border: none;
   width: 200px;
-  padding: 10px;
+  padding: 5px 10px;
+  /* margin-top: 10px; */
   margin-right: 10px;
   justify-content: center;
   align-items: center;

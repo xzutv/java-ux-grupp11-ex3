@@ -28,9 +28,7 @@ export default {
             </div>
 
             <div class="employee-row">
-                  <!-- <div class="employee-name">
-                        Jane Doe
-                  </div> -->
+
                   <ProfileCard name="Jane Doe" src="/src/assets/icons/Ellipse 5.svg" alt="Person"></ProfileCard>
                   <div class="statuses">
                         <StatusBox status="available" />
