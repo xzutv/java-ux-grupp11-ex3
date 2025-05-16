@@ -160,7 +160,8 @@
             gap: 0.25rem;
             flex: 1;
             justify-items: center;
-            padding: .3rem .3rem;
+            padding: .3rem 0 ;
+            box-sizing: border-box;
             background-color: #EDEDED;
       }
       .filler {

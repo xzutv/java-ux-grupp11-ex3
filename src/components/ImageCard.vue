@@ -1,6 +1,9 @@
 <template>
     <div class="image-card">
-        <img :src="src" :alt="alt || 'Bild'" />
+        <div>
+            <img :src="src" :alt="alt || 'Bild'" />
+            {{ name }}
+        </div>
 
     </div>
 </template>

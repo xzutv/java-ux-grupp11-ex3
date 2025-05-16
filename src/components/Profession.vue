@@ -70,11 +70,12 @@ export default {
 <style scoped>
 .profession {
     background-color: #ffffff;
-    padding: 12px;
+    padding: 1em;
     border-radius: 12px;
     color: #000;
     transition: background-color 0.3s ease;
     display: inline-block;
+    width: 200px;
 }
 
 .profession.active {
@@ -109,7 +110,7 @@ export default {
 }
 
 .circle-button {
-    background-color: #f0f0f0;
+    background-color: white;
     border: none;
     border-radius: 50%;
     width: 20px;
@@ -118,6 +119,7 @@ export default {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
 }
 
 

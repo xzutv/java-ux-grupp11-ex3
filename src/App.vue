@@ -1,7 +1,8 @@
 <script setup>
 import SelectBox from './components/SelectBox.vue';
 import StatusBox from './components/StatusBox.vue';
-import MainView from './components/MainView.vue'
+import MainView from './components/MainView.vue';
+import ImageCard from './components/ImageCard.vue';
 
 </script>
 
@@ -34,8 +35,16 @@ import MainView from './components/MainView.vue'
       <Profession img_src="/src/assets/icons/pipe.svg" alt="Rör ikon" label="Rörmokare"/>
       <Profession img_src="/src/assets/icons/bricks.svg" alt="Mur ikon" label="Murare"/>
     </div>
+    <div class="button-container">
+      <button id="book-button">
+        Boka
+      </button>
+
+    </div>
   </div>
+
   <br><br>
+
   <div class="status-legend">
       <div class="legend-item">
         <StatusBox status="available"/>
@@ -67,6 +76,7 @@ import MainView from './components/MainView.vue'
   <div>
     <MainView></MainView>
   </div>
+  <ImageCard></ImageCard>
 </template>
 
 
@@ -161,6 +171,21 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#book-button {
+  border: 0;
+  background-color: white;
+  border-radius: .5rem;
+  padding: 1em;
+  width: 230px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 
