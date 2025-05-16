@@ -1,6 +1,9 @@
 <script setup>
+import Profession from './components/Profession.vue'
 import SelectBox from './components/SelectBox.vue';
 import StatusBox from './components/StatusBox.vue';
+import MainView from './components/MainView.vue';
+import ProfileCard from './components/ProfileCard.vue';
 import MainView from './components/MainView.vue';
 import ImageCard from './components/ImageCard.vue';
 
@@ -27,7 +30,7 @@ import ImageCard from './components/ImageCard.vue';
     <label>Planera arbete
       <img src="/src/assets/icons/Pil-ned.svg">
     </label>
-    
+
     <div class="profession-container">
       <Profession img_src="/src/assets/icons/hammer.svg" alt="Hammare ikon" label="Snickare" />
       <Profession img_src="/src/assets/icons/roller.svg" alt="Pensel ikon" label="Målare" />
@@ -46,30 +49,30 @@ import ImageCard from './components/ImageCard.vue';
   <br><br>
 
   <div class="status-legend">
-      <div class="legend-item">
-        <StatusBox status="available"/>
-        Tillgänglig
-      </div>
-      <div class="legend-item">
-        <StatusBox status="full-booked"/>
-        Fullbokad
-      </div>
-      <div class="legend-item">
-        <StatusBox status="half-booked"/>
-        Bokad 50%
-      </div>
-      <div class="legend-item">
-        <StatusBox status="prel-full"/>
-        Preliminärt fullbokad
-      </div>
-      <div class="legend-item">
-        <StatusBox status="prel-half"/>
-        Preliminärt bokad 50%
-      </div>
-      <div class="legend-item">
-        <StatusBox status="absent"/>
-        Frånvaro
-      </div>
+    <div class="legend-item">
+      <StatusBox status="available" />
+      Tillgänglig
+    </div>
+    <div class="legend-item">
+      <StatusBox status="full-booked" />
+      Fullbokad
+    </div>
+    <div class="legend-item">
+      <StatusBox status="half-booked" />
+      Bokad 50%
+    </div>
+    <div class="legend-item">
+      <StatusBox status="prel-full" />
+      Preliminärt fullbokad
+    </div>
+    <div class="legend-item">
+      <StatusBox status="prel-half" />
+      Preliminärt bokad 50%
+    </div>
+    <div class="legend-item">
+      <StatusBox status="absent" />
+      Frånvaro
+    </div>
   </div>
   <br>
   <br>
@@ -85,12 +88,11 @@ import ImageCard from './components/ImageCard.vue';
 
 
 <script>
-import Profession from './components/Profession.vue'
-import SelectBox from './components/SelectBox.vue'
+
 export default {
   name: 'App',
   components: {
-    SelectBox
+    SelectBox, StatusBox, SelectBox, Profession, ProfileCard
   },
   data() {
     return {
@@ -148,7 +150,7 @@ header {
   justify-content: center;
   display: flex;
   gap: 2rem;
-
+  justify-self: center;
 }
 
 .legend-item {
@@ -171,6 +173,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 10px;
 }
 
 .button-container {

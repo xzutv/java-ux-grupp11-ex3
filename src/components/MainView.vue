@@ -1,10 +1,12 @@
 <script>
-      import StatusBox from './StatusBox.vue';
-      export default {
-            components: {
-            StatusBox
-            }
+import StatusBox from './StatusBox.vue';
+import ProfileCard from './ProfileCard.vue';
+
+export default {
+      components: {
+            StatusBox, ProfileCard
       }
+}
 </script>
 
 <template>
@@ -16,7 +18,7 @@
                         </button>
                   </div>
                   <div class="dates">
-                         <div class="date-cell" v-for="n in 20" :key="'date-' + n">{{ n }}</div>
+                        <div class="date-cell" v-for="n in 20" :key="'date-' + n">{{ n }}</div>
                   </div>
                   <div class="filler">
                         <button>
@@ -90,8 +92,8 @@
                   </div>
                   
             </div>
-            
-           
+
+
       </div>
 </template>
 
