@@ -115,11 +115,14 @@ header {
 
 }
 
-nav {
+.filter-container{
   display: flex;
-  padding: 1.25rem;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
   background-color: #EDEDED;
   margin-bottom: 10px;
+  border-radius: 1rem;
 
 }
 
@@ -146,8 +149,12 @@ nav {
 
 
 .work-plan-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   background-color: #EDEDED;
-  gap: 40px;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .profession-container {
