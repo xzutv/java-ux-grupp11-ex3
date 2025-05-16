@@ -3,8 +3,8 @@
       export default {
             components: {
             StatusBox
+            }
       }
-}
 </script>
 
 <template>
@@ -23,91 +23,72 @@
                               <img src="../assets/icons/Pil-ned.svg" alt="">
                         </button>
                   </div>
+                  
+                  
             </div>
+            <div class="calendar-view">
+                  <div class="employee-row">
+                        <div class="employee-name">
+                              Jane Doe
+                        </div>
+                        <div class="statuses">
+                              <StatusBox status="available" />
+                              <StatusBox status="available" />
+                              <StatusBox status="half-booked" />
+                              <StatusBox status="full-booked" />
+                              <StatusBox status="available" />
+                              <StatusBox status="absent" />
+                              <StatusBox status="available" />
+                              <StatusBox status="prel-half" />
+                              <StatusBox status="prel-full" />
+                              <StatusBox status="available" />
+                              <StatusBox status="available" />
+                              <StatusBox status="half-booked" />
+                              <StatusBox status="full-booked" />
+                              <StatusBox status="available" />
+                              <StatusBox status="absent" />
+                              <StatusBox status="available" />
+                              <StatusBox status="prel-half" />
+                              <StatusBox status="prel-full" />
+                              <StatusBox status="absent" />
+                              <StatusBox status="available" />
+                        </div>
+                        <div class="filler">
 
-            <div class="employee-row">
-                  <div class="employee-name">
-                        Jane Doe
+                        </div>
                   </div>
-                  <div class="statuses">
-                        <StatusBox status="available" />
-                        <StatusBox status="available" />
-                        <StatusBox status="half-booked" />
-                        <StatusBox status="full-booked" />
-                        <StatusBox status="available" />
-                        <StatusBox status="absent" />
-                        <StatusBox status="available" />
-                        <StatusBox status="prel-half" />
-                        <StatusBox status="prel-full" />
-                        <StatusBox status="available" />
-                        <StatusBox status="available" />
-                        <StatusBox status="half-booked" />
-                        <StatusBox status="full-booked" />
-                        <StatusBox status="available" />
-                        <StatusBox status="absent" />
-                        <StatusBox status="available" />
-                        <StatusBox status="prel-half" />
-                        <StatusBox status="prel-full" />
-                        <StatusBox status="absent" />
-                        <StatusBox status="available" />
+                  
+                  <div class="employee-row">
+                        <div class="employee-name">
+                              Super Mario
+                        </div>
+                        <div class="statuses">
+                              <StatusBox status="available" />
+                              <StatusBox status="half-booked" />
+                              <StatusBox status="full-booked" />
+                              <StatusBox status="absent" />
+                              <StatusBox status="available" />
+                              <StatusBox status="prel-half" />
+                              <StatusBox status="prel-full" />
+                              <StatusBox status="available" />
+                              <StatusBox status="available" />
+                              <StatusBox status="half-booked" />
+                              <StatusBox status="absent" />
+                              <StatusBox status="full-booked" />
+                              <StatusBox status="available" />
+                              <StatusBox status="available" />
+                              <StatusBox status="prel-full" />
+                              <StatusBox status="prel-half" />
+                              <StatusBox status="absent" />
+                              <StatusBox status="available" />
+                              <StatusBox status="available" />
+                              <StatusBox status="available" />
+                        </div>
+                        <div class="filler">
+
+                        </div>
                   </div>
-                  <div class="filler"></div>
-            </div>
-            <div class="employee-row">
-                  <div class="employee-name">
-                        Super Mario
-                  </div>
-                  <div class="statuses">
-                        <StatusBox status="available" />
-                        <StatusBox status="half-booked" />
-                        <StatusBox status="full-booked" />
-                        <StatusBox status="absent" />
-                        <StatusBox status="available" />
-                        <StatusBox status="prel-half" />
-                        <StatusBox status="prel-full" />
-                        <StatusBox status="available" />
-                        <StatusBox status="available" />
-                        <StatusBox status="half-booked" />
-                        <StatusBox status="absent" />
-                        <StatusBox status="full-booked" />
-                        <StatusBox status="available" />
-                        <StatusBox status="available" />
-                        <StatusBox status="prel-full" />
-                        <StatusBox status="prel-half" />
-                        <StatusBox status="absent" />
-                        <StatusBox status="available" />
-                        <StatusBox status="available" />
-                        <StatusBox status="available" />
-                  </div>
-                  <div class="filler"></div>
-            </div>
-            <div class="employee-row">
-                  <div class="employee-name">
-                        Janne Karlson
-                  </div>
-                  <div class="statuses">
-                        <StatusBox status="available" />
-                        <StatusBox status="available" />
-                        <StatusBox status="prel-half" />
-                        <StatusBox status="full-booked" />
-                        <StatusBox status="available" />
-                        <StatusBox status="absent" />
-                        <StatusBox status="available" />
-                        <StatusBox status="prel-half" />
-                        <StatusBox status="available" />
-                        <StatusBox status="prel-full" />
-                        <StatusBox status="prel-full" />
-                        <StatusBox status="absent" />
-                        <StatusBox status="half-booked" />
-                        <StatusBox status="available" />
-                        <StatusBox status="half-booked" />
-                        <StatusBox status="full-booked" />
-                        <StatusBox status="available" />
-                        <StatusBox status="absent" />
-                        <StatusBox status="available" />
-                        <StatusBox status="available" />
-                  </div>
-                  <div class="filler"></div>
+                  
             </div>
             
            
@@ -146,6 +127,7 @@
             grid-template-columns: repeat(20, 1fr);
             gap: 0.25rem;
             flex: 1;
+            
       }
       
       .date-cell {
@@ -155,9 +137,8 @@
             height: 2rem;
             width: 2rem;
             justify-self: center;         /* Or whatever height you want */
-            font-weight: bold;
             padding: auto;
-            background-color: gray;
+            background-color: #EDEDED;
             border-radius: 50%;
       }
       
@@ -170,7 +151,7 @@
       
       .employee-name {
             min-width: 5rem;
-            font-weight: bold;
+            max-width: 5rem;
       }
       
       .statuses {
@@ -179,7 +160,8 @@
             gap: 0.25rem;
             flex: 1;
             justify-items: center;
-            padding: .3rem 0rem;
+            padding: .3rem 0 ;
+            box-sizing: border-box;
             background-color: #EDEDED;
       }
       .filler {
@@ -190,5 +172,10 @@
       .shift-left{
             display: flex;
             justify-content: flex-end;
+      }
+      .calendar-view {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
       }
 </style>
