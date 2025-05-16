@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-      <div class="calendar-grid">
+      <div class="calendar">
             <div class="calendar-header">
                   <div class="filler shift-left">
                         <button>
@@ -20,13 +20,11 @@ export default {
                   <div class="dates">
                         <div class="date-cell" v-for="n in 20" :key="'date-' + n">{{ n }}</div>
                   </div>
-                  <div class="filler">
-                        <button>
-                              <img src="../assets/icons/Pil-ned.svg" alt="">
-                        </button>
+                  <div class="shift-right">
+      
+                        <img src="../assets/icons/Pil-ned.svg" alt="">
+      
                   </div>
-
-
             </div>
             <div class="calendar-view">
                   <div class="employee-row">
@@ -53,10 +51,8 @@ export default {
                               <StatusBox status="absent" />
                               <StatusBox status="available" />
                         </div>
-                        <div class="filler">
-
-                        </div>
                   </div>
+                  
 
                   <div class="employee-row">
                         <div class="employee-name">
@@ -84,11 +80,8 @@ export default {
                               <StatusBox status="available" />
                               <StatusBox status="available" />
                         </div>
-                        <div class="filler">
-
-                        </div>
+                        
                   </div>
-
             </div>
 
 
@@ -106,8 +99,7 @@ button {
 
 
 .calendar {
-      display: grid;
-      grid-template-columns: 2fr repeat(20, 1fr) .5fr;
+      
 }
 
 .nav {
@@ -115,16 +107,19 @@ button {
 }
 
 .calendar-header {
-      display: flex;
+      
+      display: grid;
+      grid-template-columns: 6rem 1fr 0rem; /* left / center / right */
       align-items: center;
-      gap: 1rem;
       margin-bottom: 0.5rem;
+      
+
 }
 
 .dates {
       display: grid;
       grid-template-columns: repeat(20, 1fr);
-      gap: 0.25rem;
+      
       flex: 1;
 
 }
@@ -148,6 +143,10 @@ button {
       display: flex;
       align-items: center;
       gap: 1rem;
+      padding: .3rem 0;
+      max-height: 2rem;
+      background-color: #EDEDED;
+      min-width: 300px
 
 }
 
@@ -159,22 +158,22 @@ button {
 .statuses {
       display: grid;
       grid-template-columns: repeat(20, 1fr);
-      gap: 0.25rem;
+     
       flex: 1;
       justify-items: center;
-      padding: .3rem 0;
-      box-sizing: border-box;
-      background-color: #EDEDED;
 }
 
 .filler {
       min-width: 5rem;
-      background-color: white;
 }
 
 .shift-left {
       display: flex;
       justify-content: flex-end;
+}
+
+.shift-right {
+      
 }
 
 .calendar-view {
