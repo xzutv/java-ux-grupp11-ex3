@@ -4,8 +4,6 @@ import SelectBox from './components/SelectBox.vue';
 import StatusBox from './components/StatusBox.vue';
 import MainView from './components/MainView.vue';
 import ProfileCard from './components/ProfileCard.vue';
-import MainView from './components/MainView.vue';
-import ImageCard from './components/ImageCard.vue';
 
 </script>
 
@@ -79,7 +77,6 @@ import ImageCard from './components/ImageCard.vue';
   <div>
     <MainView></MainView>
   </div>
-  <ImageCard></ImageCard>
 </template>
 
 
