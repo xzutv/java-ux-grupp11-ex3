@@ -25,14 +25,12 @@ export default {
                               <img src="../assets/icons/Pil-ned.svg" alt="">
                         </button>
                   </div>
-                  
-                  
+
+
             </div>
             <div class="calendar-view">
                   <div class="employee-row">
-                        <div class="employee-name">
-                              Jane Doe
-                        </div>
+                        <ProfileCard name="Jane Doe" src="/src/assets/icons/Ellipse 5.svg" alt="Person"></ProfileCard>
                         <div class="statuses">
                               <StatusBox status="available" />
                               <StatusBox status="available" />
@@ -59,7 +57,7 @@ export default {
 
                         </div>
                   </div>
-                  
+
                   <div class="employee-row">
                         <div class="employee-name">
                               Super Mario
@@ -90,7 +88,7 @@ export default {
 
                         </div>
                   </div>
-                  
+
             </div>
 
 
@@ -98,86 +96,90 @@ export default {
 </template>
 
 <style scoped>
+button {
+      border: 0;
+      background-color: white;
+      cursor: pointer;
+}
 
-      button {           
-            border: 0;
-            background-color: white;
-            cursor: pointer;
-      }
 
-      
-      
-      
-      .calendar {
-            display: grid;
-            grid-template-columns: 2fr repeat(20, 1fr) .5fr;
-      }
-      
-      .nav {
-            grid-column: span 22;
-      }
-      
-      .calendar-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 0.5rem;
-      }
-      
-      .dates {
-            display: grid;
-            grid-template-columns: repeat(20, 1fr);
-            gap: 0.25rem;
-            flex: 1;
-            
-      }
-      
-      .date-cell {
-            display: flex;
-            align-items: center;    /* Vertical centering */
-            justify-content: center; /* Horizontal centering */
-            height: 2rem;
-            width: 2rem;
-            justify-self: center;         /* Or whatever height you want */
-            padding: auto;
-            background-color: #EDEDED;
-            border-radius: 50%;
-      }
-      
-      .employee-row {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            
-      }
-      
-      .employee-name {
-            min-width: 5rem;
-            max-width: 5rem;
-      }
-      
-      .statuses {
-            display: grid;
-            grid-template-columns: repeat(20, 1fr);
-            gap: 0.25rem;
-            flex: 1;
-            justify-items: center;
-            padding: .3rem 0 ;
-            box-sizing: border-box;
-            background-color: #EDEDED;
-      }
-      .filler {
-            min-width: 5rem;
-            background-color: white;
-      }
 
-      .shift-left{
-            display: flex;
-            justify-content: flex-end;
-      }
-      .calendar-view {
-            display: flex;
-            flex-direction: column;
-            gap: .5rem;
-      }
+
+.calendar {
+      display: grid;
+      grid-template-columns: 2fr repeat(20, 1fr) .5fr;
+}
+
+.nav {
+      grid-column: span 22;
+}
+
+.calendar-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+}
+
+.dates {
+      display: grid;
+      grid-template-columns: repeat(20, 1fr);
+      gap: 0.25rem;
+      flex: 1;
+
+}
+
+.date-cell {
+      display: flex;
+      align-items: center;
+      /* Vertical centering */
+      justify-content: center;
+      /* Horizontal centering */
+      height: 2rem;
+      width: 2rem;
+      justify-self: center;
+      /* Or whatever height you want */
+      padding: auto;
+      background-color: #EDEDED;
+      border-radius: 50%;
+}
+
+.employee-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+}
+
+.employee-name {
+      min-width: 5rem;
+      max-width: 5rem;
+}
+
+.statuses {
+      display: grid;
+      grid-template-columns: repeat(20, 1fr);
+      gap: 0.25rem;
+      flex: 1;
+      justify-items: center;
+      padding: .3rem 0;
+      box-sizing: border-box;
+      background-color: #EDEDED;
+}
+
+.filler {
+      min-width: 5rem;
+      background-color: white;
+}
+
+.shift-left {
+      display: flex;
+      justify-content: flex-end;
+}
+
+.calendar-view {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+}
 </style>
