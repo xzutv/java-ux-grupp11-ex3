@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 img {
-    max-width: 60%;
+    max-width: 1.5rem;
     border-radius: 8px;
     margin-left: 10px;
     /* width: 33px;
@@ -46,6 +46,8 @@ img {
 }
 
 .image-card {
+    width: 5rem;
+    height: 2rem;
     display: flex;
     flex-direction: column;
     justify-items: center;
